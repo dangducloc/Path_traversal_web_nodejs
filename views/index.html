@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
+    <title>My Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
+            /* display: flex; */
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -18,10 +18,13 @@
 
         .image-container {
             display: flex;
+            width: 100%;
+            overflow-x: scroll;
+            display: flex;
             gap: 20px;
         }
 
-        .image-container img {
+        img {
             max-width: 100%;
             height: auto;
             border: 2px solid #ddd;
@@ -32,9 +35,22 @@
 </head>
 
 <body>
+
+    <center style="display: flex;">
+        <!-- <img src="../Pictures/img1.jpg" style="width: 5%;" /> -->
+        <div style="width: 100%;">
+            <h1>Wellcum to My Gallery</h1>
+        </div>
+        <!-- <img src="../Pictures/img1.jpg" style="width: 5%;" /> -->
+    </center>
+    <br>
     <div class="image-container">
-        <img src="../Pictures/img1.jpg" />
         <img src="../Pictures?file=img1.jpg" />
+        <img src="../Pictures?file=img2.jpg" />
+        <img src="../Pictures?file=img3.jpg" />
+        <!-- <img src="../Pictures/img1.jpg" />
+        <img src="../Pictures/img2.jpg" />
+        <img src="../Pictures/img3.jpg" /> -->
     </div>
 </body>
 
